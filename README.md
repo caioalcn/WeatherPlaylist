@@ -19,16 +19,17 @@ The WeatherPlaylist is an **RESTFul API** developed in dotnet core, that recive 
 ## Setup
 
 To run the project you need to set the API's tokens in the User Secrets. Here you can get the [Open Weather](https://openweathermap.org/api) token, and here for the [Spotify](https://developer.spotify.com/).
-```
-  {
-   "OpenWeatherConfig": {
-     "ApiToken": "YOUR-OPENWEATHER-API-TOKEN"
-    },
+
+```yaml
+{
+  "OpenWeatherConfig": {
+    "ApiToken": "YOUR-OPENWEATHER-API-TOKEN"
+  },
   
-   "SpotifyConfig": {
-      "ApiToken": "YOUR-SPOTIFY-API-TOKEN"
-   } 
-  }
+  "SpotifyConfig": {
+    "ApiToken": "YOUR-SPOTIFY-API-TOKEN"
+  } 
+}
 ```
 
 ## REST API Examples:
@@ -41,14 +42,15 @@ To run the project you need to set the API's tokens in the User Secrets. Here yo
     
 `Response:`
     
-    {
-    "app": "Playlist.API",
-    "version": "1.0.0",
-    "status": "OK",
-    "message": "Welcome To WeatherPlaylist"
-    }
-    
-    
+```yaml
+{
+  "app": "Playlist.API",
+  "version": "1.0.0",
+  "status": "OK",
+  "message": "Welcome To WeatherPlaylist"
+}
+```    
+
     
  `Request: GET /playlist`
  
@@ -56,33 +58,39 @@ To run the project you need to set the API's tokens in the User Secrets. Here yo
     
 `Response:`
     
-    {
-      "playlists": {
-          "href": "https://api.spotify.com/v1/search?query=Pop&type=playlist&market=US&offset=0&limit=5",
-          "items": [
-             {
-                 "collaborative": false,
-                 "description": "",
-                 "href": "https://api.spotify.com/v1/playlists/1gxG8eion6raC6PynemKMj",
-                 "id": "1gxG8eion6raC6PynemKMj",
-                 "name": "Yep",
-                 "snapshot_id": "NTUzLDNlNWNmM2FmMzRlYzcwZjM3MmU0NTdjMzVmOTg3MzQ5YjY5OWM3NjI=",
-                 "tracks": {
-                     "href": "https://api.spotify.com/v1/playlists/1gxG8eion6raC6PynemKMj/tracks",
-                     "total": 626
-                 },
-                 "type": "playlist",
-                 "uri": "spotify:playlist:1gxG8eion6raC6PynemKMj"
-             }, ...]
-        },
-      "temperature": 23.77000000000004
-    }
-    
+```yaml
+{
+    "playlists": {
+        "href": "https://api.spotify.com/v1/search?query=Pop&type=playlist&market=US&offset=0&limit=5",
+        "items": [
+            {
+                "collaborative": false,
+                "description": "",
+                "href": "https://api.spotify.com/v1/playlists/1gxG8eion6raC6PynemKMj",
+                "id": "1gxG8eion6raC6PynemKMj",
+                "name": "Yep",
+                "snapshot_id": "NTUzLDNlNWNmM2FmMzRlYzcwZjM3MmU0NTdjMzVmOTg3MzQ5YjY5OWM3NjI=",
+                "tracks": {
+                    "href": "https://api.spotify.com/v1/playlists/1gxG8eion6raC6PynemKMj/tracks",
+                    "total": 626
+                },
+                "type": "playlist",
+                "uri": "spotify:playlist:1gxG8eion6raC6PynemKMj"
+            },...
+        ]
+    },
+    "temperature": 23.77000000000004
+}
+```
+
+
 `Error Response:`
 
-    {
-      "error": {
-          "status": 401,
-          "message": "The access token expired"
-      }
-    }
+```yaml
+{
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+}
+```
