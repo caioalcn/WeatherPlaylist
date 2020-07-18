@@ -38,7 +38,7 @@ To run the project you need to set the API's tokens in the User Secrets. Here yo
 
 `Request: GET /`
 
-    http://localhost:5001/
+    https://localhost:5001/
     
 `Response:`
     
@@ -54,7 +54,7 @@ To run the project you need to set the API's tokens in the User Secrets. Here yo
     
  `Request: GET /playlist`
  
-    http://localhost:5001/playlist
+    http://localhost:65280/playlist?city=toronto or https://localhost:65280/playlist?lat=52.8283&long=103.5186
     
 `Response:`
     
