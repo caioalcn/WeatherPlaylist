@@ -1,9 +1,9 @@
 # WeatherPlaylist
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Twitter Follow](https://img.shields.io/twitter/follow/caiowk.svg?style=social)](https://twitter.com/caiowk)  
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 ![Language](https://img.shields.io/badge/Language-C%23-red)
+[![Twitter Follow](https://img.shields.io/twitter/follow/caiowk.svg?style=social)](https://twitter.com/caiowk)
 
 This API was created for study purpose, you can find the challenger in https://github.com/ifood/vemproifood-backend.
 
